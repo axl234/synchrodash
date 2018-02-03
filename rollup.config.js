@@ -5,7 +5,7 @@
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-	input: 'index.js',
+	input: 'src/index.js',
 	output: {
 		file: 'dist/bundle.js',
 		format: 'cjs'
@@ -14,5 +14,8 @@ export default {
 		// resolve(), // tells Rollup how to find date-fns in node_modules
 		// commonjs(), // converts date-fns to ES modules
 		// production && uglify() // minify, but only in production
-	]
+  ],
+  watch: {
+    include: 'src/**'
+  }
 };
