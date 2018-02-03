@@ -1,0 +1,32 @@
+{
+  "name": "synchrodash",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/bundle.js",
+    "dev": "rollup -c -w && npm start",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjy2429/synchrodash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjy2429/synchrodash/issues"
+  },
+  "homepage": "https://github.com/benjy2429/synchrodash#readme",
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "koa": "^2.4.1"
+  },
+  "devDependencies": {
+    "rollup": "^0.55.3"
+  }
+}
