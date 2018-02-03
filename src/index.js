@@ -3,9 +3,11 @@ import Koa from 'koa';
 const PORT = process.env.PORT || 3000;
 const app = new Koa();
 
-app.use(async ctx => {
+app.use(async (ctx) => {
   ctx.body = 'Hello world';
 });
 
 app.listen(PORT);
+
+// eslint-disable-next-line no-console
 console.log(`App runnning on port ${PORT}`);

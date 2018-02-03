@@ -9,8 +9,12 @@
     "dev": "npm-run-all --parallel start-dev watch",
     "watch": "rollup -c -w",
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src"
   },
+  "precommit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/benjy2429/synchrodash.git"
@@ -29,8 +33,12 @@
     "koa": "^2.4.1"
   },
   "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "nodemon": "^1.14.12",
     "npm-run-all": "^4.1.2",
+    "pre-commit": "^1.2.2",
     "rollup": "^0.55.3"
   }
 }
