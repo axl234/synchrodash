@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node build/bundle.js",
-    "start-dev": "nodemon build/bundle.js",
+    "start-dev": "env $(cat .env) nodemon build/bundle.js",
     "dev": "npm-run-all --parallel start-dev watch",
     "watch": "rollup -c -w",
     "build": "rollup -c",
