@@ -15,6 +15,7 @@ const server = {
     commonjs(),
     copy({
       'src/template.html': 'build/index.html',
+      'src/stylesheet.css': 'build/assets/stylesheet.css',
     }),
     uglify(),
   ],

@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.frame {
+  display: block;
+  width: 100vw;
+  height: calc(100vh - 30px);
+  border: none;
+  background-color: #161616;
+}
+
+.banner {
+  height: 30px;
+  width: 100vw;
+  background-color: #161616;
+  color: #999;
+  line-height: 30px;
+  clear: both;
+}
+
+.banner-left,
+.banner-right {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.banner-right {
+  float: right;
+  text-align: right;
+}
